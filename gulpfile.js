@@ -8,17 +8,28 @@ gulp.task("copy-html",function(){
 
 gulp.task("watch",function(){
 	gulp.watch("home.html",["copy-html"]);
-	gulp.watch("scss/home.scss",["sass"]);
+	gulp.watch("scss/*.scss",["sass"]);
 	gulp.watch("js/*.js",["myjs"]);
 	gulp.watch("img/*.{jpg,png,gif}",["imgs"]);
 });
 
 gulp.task("sass",function(){
-	gulp.src("scss/home.scss")
+	gulp.src("scss/*.scss")
 	.pipe(sass())
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\vansss\\css"));
 });
 
+// gulp.task("sass",function(){
+// 	gulp.src("scss/base.scss")
+// 	.pipe(sass())
+// 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\vansss\\css"));
+// });
+
+// gulp.task("sass",function(){
+// 	gulp.src("scss/bannerList.scss")
+// 	.pipe(sass())
+// 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\vansss\\css"));
+// });
 
 gulp.task("myjs",function(){
 	gulp.src("js/*.js")
