@@ -44,7 +44,7 @@ function bannerListFn(a,b,c,d,e,f){
     imgListBtn();
 
     function bannerImgList(a){
-        $bannerMaxWapDom.find("ul").animate({left: -a*windowWidth},400)
+        $bannerMaxWapDom.find("ul").animate({left: -a*windowWidth},2000)
     }
 
     function setTime(){

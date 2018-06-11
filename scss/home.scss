@@ -29,7 +29,7 @@ img{
 header{
 	width:100%;
 	height:164px;
-	
+	background: white;
     overflow:hidden;
 }
 .bigbox{
@@ -41,7 +41,7 @@ header{
 	height:69px;
 	float:right;
 	overflow:hidden;
-	background:pink;
+
 }
 .headerlogin{
 	color:#d2d2d2;
@@ -49,13 +49,18 @@ header{
 
 }
 .uls{
+	float:left;
+    height: 48px;
+    line-height: 48px;
     margin-left: 20px;
+    overflow:hidden;
 }
 .uls li{
+	float:left;
 	display:inline-block;
 }
 .uls1{
-	background:url(../img/people.png) no-repeat 0px 5px;
+	background:url(../img/people.png) no-repeat 0px 20px;
 	padding: 2px 0 2px 20px;
 	overflow:hidden;
 }
@@ -64,7 +69,7 @@ header{
 	float:left;
 }
 .uls1a{
-	background:url(../img/xieline.png) no-repeat 0px 2px;
+	background:url(../img/xieline.png) no-repeat 0px 17px;
 	padding-left:12px;
 }
 .uls2{
@@ -75,8 +80,56 @@ header{
 	}
 }
 .uls2a{
-	background:url(../img/gwc.png) no-repeat 0px 4px;
+	background:url(../img/gwc.png) no-repeat 0px 20px;
 	padding: 2px 0 2px 20px;
+}
+.uls3{
+	background:url(../img/shoucang.png) no-repeat 2px 3px;
+	    padding-left: 22px;
+	a{
+		font-size:16px;
+	}
+}
+
+.uls4{
+	background:url(../img/map.png) no-repeat 2px 3px;
+	padding-right: 18px;
+	    padding-left: 18px;
+	a{
+		font-size:16px;
+	}
+}
+
+.select a{
+	font-size:16px;
+	background:url(../img/selec.png) no-repeat 38px 6px;
+    padding-right: 24px;	
+}
+.vanstitle{
+    float: left;
+    width: 176px;
+    height: 20px;
+    border: 0;
+    padding: 0;
+    text-indent: 10px;
+    outline: none;
+    margin-top: 6px;
+    font-family: "Franklin-Demi","冬青黑体","microsoft yahei";
+}
+.btn_search{
+    width: 42px;
+    height: 32px;
+    border: 0;
+    padding: 0;
+    background: url(../img/searchbtn.png) no-repeat center center;
+    // background-size: 21px auto;
+    cursor: pointer;
+}
+
+.searchvans{
+	float:left;
+	border: 1px solid #d2d2d2;
+	    margin-top: 7px;
 }
 
 
@@ -638,7 +691,7 @@ footer{
 .artbox3{
 	border:1px solid #d7d8d4;
 	width:246px;
-	margin-right:19px;
+	margin-right:18px;
     font-size: 14px;
 }
 .artbox3 img{

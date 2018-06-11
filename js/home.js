@@ -1,12 +1,11 @@
 $(window).scroll(function(){
 		var scroll = document.body.scrollTop || document.documentElement.scrollTop;
 		
-		if(scroll>=70){
-			$('#box1').css({position:"fixed",margin:"0 auto",top:"0"});
+		if(scroll>=79){
+			var w = $('#logmiddle').width()/2;
+			$('#logmiddle').css({position:"fixed",top:"0",left:"50%",marginLeft:-w+"px",zIndex:10000});
 			
 		}else{
-			$('#box1').css("position","relative");
+			$('#logmiddle').css("position","relative");
 		}
 	});
-
-
