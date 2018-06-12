@@ -24,7 +24,33 @@ img{
 // input{cursor:url('http://iqzhan.cn/images/cursor/curostext.cur'),auto;}
 // button{cursor:url('http://iqzhan.cn/images/cursor/curoslink.cur'),auto;}
 // img{cursor:url('http://iqzhan.cn/images/cursor/curos.cur'),auto; }
-
+// 客服
+.right-fix{
+    position: fixed;
+    bottom: 181px;
+    right: 0;
+    z-index: 9999;
+    width: 60px;
+    height: 60px;
+    background: url(../img/kf.png) no-repeat center;
+    background-size: 100% auto;
+}
+.right-fix a {
+    height: 68px;
+    display: block;
+ }
+ #gotop {
+    width: 60px;
+    height: 60px;
+    display: none;
+    position: fixed;
+    bottom: 120px;
+    right: 0px;
+    cursor: pointer;
+    z-index: 2000;
+    background: url(../img/gotop.png) no-repeat center center;
+    background-size: 100% auto;
+   }
 /*头部*/
 header{
 	width:100%;
@@ -35,6 +61,7 @@ header{
 .bigbox{
 	width:1040px;
 	margin:0 auto;
+	overflow:hidden;
 }
 .logtop{
 	width:792px;
@@ -58,51 +85,63 @@ header{
 .uls li{
 	float:left;
 	display:inline-block;
+    color: #d2d2d2;
 }
 .uls1{
-	background:url(../img/people.png) no-repeat 0px 20px;
-	padding: 2px 0 2px 20px;
+	background:url(../img/people.png) no-repeat 0px 18px;
+	padding: 0px 0 2px 20px;
 	overflow:hidden;
+
 }
 .uls1 a{
-	font-size:16px;
+	font-size:15px;
 	float:left;
+	color: #d2d2d2;
 }
 .uls1a{
 	background:url(../img/xieline.png) no-repeat 0px 17px;
-	padding-left:12px;
+	padding-left:16px;
+}
+.uls1b{
+	padding-right:4px;
 }
 .uls2{
-	background:url(../img/buyjt.png) no-repeat 103px 8px;
-	padding-right: 18px;
+	background:url(../img/buyjt.png) no-repeat 124px 22px;
+	padding-right: 36px;
+	padding-left: 24px;
 	a{
-		font-size:16px;
+		font-size:15px;
+		color: #d2d2d2;
 	}
 }
 .uls2a{
-	background:url(../img/gwc.png) no-repeat 0px 20px;
-	padding: 2px 0 2px 20px;
+	background:url(../img/gwc.png) no-repeat 0px 16px;
+	padding: 0px 0 2px 20px;
+	    padding-left: 24px;
 }
 .uls3{
-	background:url(../img/shoucang.png) no-repeat 2px 3px;
+	background:url(../img/shoucang.png) no-repeat 2px 18px;
 	    padding-left: 22px;
 	a{
-		font-size:16px;
+		font-size:15px;
+		color: #d2d2d2;
 	}
 }
 
 .uls4{
-	background:url(../img/map.png) no-repeat 2px 3px;
+	background:url(../img/map.png) no-repeat 25px 20px;
 	padding-right: 18px;
-	    padding-left: 18px;
+	    padding-left: 42px;
 	a{
-		font-size:16px;
+		font-size:15px;
+		color: #d2d2d2;
 	}
 }
 
 .select a{
 	font-size:16px;
-	background:url(../img/selec.png) no-repeat 38px 6px;
+	background:url(../img/selec.png) no-repeat 38px 20px;
+    color: #d2d2d2;
     padding-right: 24px;	
 }
 .vanstitle{
@@ -117,7 +156,7 @@ header{
     font-family: "Franklin-Demi","冬青黑体","microsoft yahei";
 }
 .btn_search{
-    width: 42px;
+    width: 40px;
     height: 32px;
     border: 0;
     padding: 0;
@@ -125,29 +164,187 @@ header{
     // background-size: 21px auto;
     cursor: pointer;
 }
-
-.searchvans{
-	float:left;
-	border: 1px solid #d2d2d2;
-	    margin-top: 7px;
+.country{
+	width:240px;
+	height:410px;
+    background-color: #fff;
+    border: solid 1px #ccc;
+    position: absolute;
+    top: 50px;
+    right: 374px;
+    z-index:10001;
+    overflow-y: scroll;
+    display:none;
 }
+.culs{
+    text-align: right;
+    line-height: 45px;
+    height: 45px;
+    a{
+    	font-size:14px;
+    }
+}
+.culs li{
+	    padding: 0 10px;
+}
+.culs li:nth-child(1){
+	    background-color: #eee;
+}
+.redlog{
+	padding-bottom:15px;
+	float:left;
+}
+.listuls{
+	float:left;
+	margin-top: 36px;
+}
+.listuls ul li{
+	float:left;
+}
+.svbottom{
+	overflow:hidden;
+	margin-top: 5px;
+}
+.svbottom a{
+	float:left;
+	    color: #d2d2d2;
+	    font-size:14px;
+}
+.svbottom .sv1{
+	padding-right: 20px;
+    background: url(../img/bline.png) no-repeat 34px 2px;
+}
+.svbottom .sv2{
+	padding-right: 18px;
+    background: url(../img/bline.png) no-repeat 48px 2px;
+}
+.searchvans{
+	width: 218px;
+	overflow:hidden;
+	float: right;
+}
+.svtop{
+	    border: 1px solid #d2d2d2;
+    margin-top: 7px;
+}
+//二级菜单
+.none1{
+	display:none;
+	left: 0px;
+    top: 79px;
+    z-index: 100005;
+    background-color: #000;
+    position: absolute;
+    // z-index: 10009;
+    width:100%;
+    height:58px;
+}
+.list1 .none1:hover{
+	display:block;
+}
+.bgnone1{
 
+	background-color: #000;
+	width:1040px;
+	margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+.bgtitle1{
+	overflow:hidden;
+	float: right;
+    width: 884px;
+}
+.titlea{
+	height: 43px;
+    line-height: 43px;
+    font-size:16px;
+    font-weight:bold;
+    color: #000;
+}
+#titlebox{
+	background:url(../img/logjt.png) no-repeat 80px 18px;
+	background-size:12px auto;
+	    padding-right: 24px;
+}
+.bgtitle1 a{
+	color:white;
+	float:left;
+	font-size:16px;
+	padding-right:62px;
+}
+.list1{
+	padding-left: 12px;
+    padding-right: 12px;
+	background:url(../img/titleline.png) no-repeat 116px  12px;
+}
+.list2{
+	padding-left: 12px;
+    padding-right: 20px;
+	background:url(../img/titleline.png) no-repeat 86px  12px;
+}
+#titlebox2{
+	background:url(../img/logjt.png) no-repeat 52px 18px;
+	background-size:12px auto;
+	    padding-right: 24px;
+}
+.list3{
+	
+    padding-right: 18px;
+	background:url(../img/titleline.png) no-repeat 158px  12px;
 
-
+}
+#titlebox3{
+	background:url(../img/logjt.png) no-repeat 138px 18px;
+	background-size:12px auto;
+	    padding-right: 24px;
+}
+.list4{
+	
+    padding-right: 20px;
+	background:url(../img/titleline.png) no-repeat 56px  13px;
+}
+#titlebox4{
+	background:url(../img/logjt.png) no-repeat 38px 18px;
+	background-size:12px auto;
+	    padding-right: 24px;
+}
+.list5{
+	
+    padding-right: 20px;
+	background:url(../img/titleline.png) no-repeat 58px  13px;
+}
+#titlebox5{
+	background:url(../img/logjt.png) no-repeat 38px 18px;
+	background-size:12px auto;
+	    padding-right: 24px;
+}
+.list6{	
+    padding-right: 26px;
+	background:url(../img/titleline.png) no-repeat 88px  13px;
+}
+.list7{	
+    padding-right: 21px;
+	background:url(../img/titleline.png) no-repeat 138px  13px;
+}
 
 
 
 #logmiddle{
 	width:1042px;
-	height:79px;
+	overflow:hidden;
+	// height:79px;
 	margin:0 auto;
-	background:green;
+	
 	clear:both;
 	position: relative;
 }
 .loglistbox{
 	width:100%;
 	overflow:hidden;
+	background-color:white;
+	box-shadow: 0px 1px 0px #cecece;
 }
 
 

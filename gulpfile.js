@@ -1,13 +1,13 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 gulp.task("copy-html",function(){
-	gulp.src("home.html")
+	gulp.src("*.html")
 	.pipe(gulp.dest("D:\\phpStudy\\WWW\\vansss"));
 });
 
 
 gulp.task("watch",function(){
-	gulp.watch("home.html",["copy-html"]);
+	gulp.watch("*.html",["copy-html"]);
 	gulp.watch("scss/*.scss",["sass"]);
 	gulp.watch("js/*.js",["myjs"]);
 	gulp.watch("img/*.{jpg,png,gif}",["imgs"]);
